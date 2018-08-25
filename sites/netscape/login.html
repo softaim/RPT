@@ -1,0 +1,145 @@
+
+<html>
+<head><title>Sign On To Netscape!</title>
+<link rel="stylesheet" href="/images/smurf.css" type="text/css">
+    <SCRIPT language="javascript">
+        function validate_data() {
+            if(document.login_form.login_name.value.match(/@/)) {
+                if(!document.login_form.login_name.value.toLowerCase().match(/@netscape.com$/)) {
+                    alertuser(document.login_form.login_name, "You must enter in a @netscape.com email address.");
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function alertuser(field,msg) {
+            alert(msg);
+            field.focus();
+        }
+    </SCRIPT>
+<meta name="oath:guce:product-eu" content="null"/>
+<meta name="oath:guce:consent-host" content="null"/>
+<meta name="oath:guce:report-only" content="null"/>
+<script async src="https://s.yimg.com/oa/guce.js"></script>
+</head>
+<body>
+<script src="https://s.yimg.com/ss/rapid3.js"></script>
+<script>
+	var custKeys = {
+		st_sec:"nsi.admin",
+		pt:"utility",
+		ver:"lca",
+		paid:"lca:nsi admin NSISP Sign On To Netscape!",
+	};
+    var myRapidInstance = new YAHOO.i13n.Rapid({
+		spaceid:1197805277,
+		keys:custKeys,
+		webworker_file : "/images/rapidworker-1.2.js"
+	});
+</script>
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "1000009", c3: "", c4: ""});
+(function() {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+<img src="//b.scorecardresearch.com/p?c1=2&c2=1000009&cv=2.0&cj=1" />
+</noscript>
+
+<iframe NAME="V001BAJA_WBA_HEADER" frameBorder="0" BORDER="0" WIDTH="850" HEIGHT="90" VALIGN="TOP" SRC="https://isp.netscape.com/inc/navbar.jsp"></iframe>
+<table border=0 cellpadding=0 cellspacing=0 width=600>
+  <tr>
+    <td valign=top width=146>
+      
+        <div class=nsFont>Sign On To Netscape</div>
+        <div class=Anorm>Enter your Email Address and password to sign in to Netscape.</div>
+      
+    </td>
+    <td width=6>
+      &nbsp;
+    </td>
+    <td valign=top width=450>
+      <TABLE border=0 cellpadding=0 cellspacing=0>
+        <tr><td background="/images/bkg1.gif" height=10></td></tr>
+        <tr><td background="/images/bkg2.gif">
+          <div class=vs6></div>
+          <div class=padl5>
+            <form method="post" name="login_form" action="/session/login.php" onsubmit="return validate_data();">
+              <INPUT type="hidden" name="page" value="https://myaccount.isp.netscape.com/myaccount/index.do">
+              <table border=0 cellpadding=0 cellspacing=0 width=450>
+                <tr>
+                  <td valign=top width=240 colspan=2>
+                    <div class=Asmall><label for="login_name">Your Email Address:</label></div>
+                    <div class=vs6></div>
+                    <input type=text name=login_name tabindex=1 size=20>
+                    <div class=vs6></div>
+                    <div class=Asmall><label for="password">Your Password:</label> </div>
+                    <div class=vs6></div>
+                    <input type=password name=password tabindex=2 size=20>
+                    <div class=vs6></div>
+                  </td>
+                  <td width=6>
+                    &nbsp;
+                  </td>
+                  <td valign=top width=210>
+                    <table width=160 cellpadding=0 cellspacing=0 border=0>
+                      <tr>
+                        <td width="100%">
+                          <div class=Anormb>Or you can go to...</div>
+                          <div><a href="http://isp.netscape.com" class=Anorm><img src=/images/btn_nshome.gif alt="Go to Netscape Home" border="0" vspace=3></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="100%">
+                          <div>&#160;</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="100%" align="left" valign="top" class="Anormsmall">
+                          <table cellpadding=0 cellspacing=0 border=0 width=100%>
+                            <tr>
+                              <td align="left" valign="top" class="Anormsmall">
+                                Not a Member?
+                              </td>
+                              <td>
+                                <a href="http://www.getnetscape.com/" class=Anorm"><img src=/images/but_SignUp.gif alt="Go to Netscape signUp" border="0" valign="bottom"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign=top>
+                    <a href="https://myaccount.isp.netscape.com/myaccount/LostPassword.do" class=Anorm>Forgot Your Password?</a> &nbsp;
+                  </td>
+                  <td width=133>
+                    <INPUT type="image" tabindex=3 src=/images/btn_signin.gif alt="Sign In" name="signin" title="signin">
+                    <div class=vs6></div>
+                  </td>
+                  <td width=6>
+                    &nbsp;
+                  </td>
+                  <td width=210>
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </form>
+        </td></tr>
+        <tr><td background="/images/bkg3.gif" height=10></td></tr>
+      </TABLE>
+    </td>
+  </tr>
+  <tr><td height="15"></td></tr>
+</table>
+<iframe NAME="V001BAJA_WBA_FOOTER" frameBorder="0" BORDER="0" WIDTH="850" HEIGHT="90" VALIGN="TOP" SRC="https://isp.netscape.com/inc/footer.jsp"></iframe>
+</body>
+</html>
