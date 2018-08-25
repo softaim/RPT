@@ -423,7 +423,7 @@ fi
 
 
 printf "\n"
-read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Type \033[41m RPT \e[0m \033[1;32mif you agree to use it only Educational Purpose: \e[0m\en' option_server
+read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Type \033[41m RPT \e[0m \033[1;32mif you fully agree to use it only for Educational Purpose: \e[0m\en' option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server == RPT || $option_server == rpt ]]; then
 the
